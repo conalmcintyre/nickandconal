@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nick and Conal</title>
+    <style>
+        body {
+            background: #ffebcd url('https://upload.wikimedia.org/wikipedia/commons/d/d9/Geocities-background.png') repeat;
+            color: #333333;
+            font-family: "Comic Sans MS", "Arial", sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: #00008B;
+            color: #FFFFFF;
+            padding: 20px;
+            font-size: 2rem;
+            text-transform: uppercase;
+            text-shadow: 2px 2px 5px #FF4500;
+        }
+
+        .marquee {
+            background: #FFD700;
+            color: #000000;
+            font-weight: bold;
+            font-size: 1.5rem;
+            padding: 10px;
+            margin: 20px 0;
+        }
+
+        .marquee marquee {
+            font-size: 1.8rem;
+            color: #FF0000;
+        }
+
+        .main-content {
+            margin: 20px auto;
+            max-width: 800px;
+            position: relative;
+        }
+
+        .image-container {
+            display: inline-block;
+            position: relative;
+            padding: 20px;
+        }
+
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Blinking lights */
+        .lights {
+            position: absolute;
+            top: -10px;
+            left: -10px;
+            right: -10px;
+            bottom: -10px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-content: space-between;
+            pointer-events: none;
+        }
+
+        .light {
+            width: 12px;
+            height: 12px;
+            background-color: red;
+            border-radius: 50%;
+            animation: blink 1.5s infinite;
+        }
+
+        .light:nth-child(2n) {
+            animation-delay: 0.5s;
+            background-color: yellow;
+        }
+
+        .light:nth-child(3n) {
+            animation-delay: 1s;
+            background-color: blue;
+        }
+
+        .light:nth-child(4n) {
+            animation-delay: 1.2s;
+            background-color: green;
+        }
+
+        .description {
+            background: #FFB6C1;
+            padding: 15px;
+            border: 3px dashed #FF69B4;
+            margin: 20px;
+        }
+
+        .mailing-list {
+            background: #7FFF00;
+            padding: 20px;
+            border: 2px solid #32CD32;
+            margin: 20px;
+        }
+
+        .mailing-list a {
+            text-decoration: none;
+            color: #000080;
+            font-weight: bold;
+            font-size: 1.2rem;
+            animation: blink 1s infinite;
+        }
+
+        footer {
+            margin-top: 40px;
+            font-size: 0.8rem;
+            color: #888888;
+        }
+
+        @keyframes blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.2; }
+        }
+
+        /* Hide blinking lights on smaller screens */
+        @media (max-width: 800px) {
+            .lights {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Welcome to Nick and Conal's Official Website!
+    </header>
+
+    <div class="marquee">
+        <marquee>🎵 The debut record is coming soon! Join our mailing list for exclusive updates! 🎵</marquee>
+    </div>
+
+    <div class="main-content">
+        <div class="image-container">
+            <!-- Blinking lights container -->
+            <div class="lights">
+                <!-- Lights surrounding the image -->
+                <div class="light"></div>
+                <div class="light"></div>
+                <div class="light"></div>
+                <div class="light"></div>
+                <div class="light"></div>
+                <div class="light"></div>
+                <div class="light"></div>
+                <div class="light"></div>
+                <div class="light"></div>
+                <div class="light"></div>
+                <div class="light"></div>
+                <div class="light"></div>
+            </div>
+            <!-- Main image -->
+            <img src="image_67506177.JPG" alt="Nick and Conal">
+        </div>
+
+        <div class="description">
+            <p><strong>Nick and Conal</strong> are bringing a unique blend of classic 60s songwriting and lo-fi rock energy to your ears!</p>
+            <p>Stay tuned for our first record, and join us on this journey filled with lush melodies, vintage vibes, and heartfelt tunes.</p>
+        </div>
+
+        <div class="mailing-list">
+            <p><strong>Want to stay updated?</strong></p>
+            <p>Sign up for our mailing list to hear about new releases, upcoming shows, and more!</p>
+            <a href="https://forms.gle/VurmiDHq3N3Z3HJx6" target="_blank">📬 Click here to join our mailing list! 📬</a>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2024 Nick and Conal. All Rights Reserved. Built with love and 90s nostalgia.
+    </footer>
+</body>
+</html>
